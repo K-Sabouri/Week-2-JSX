@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+      Document setup
+      - Title shows in browser tab
+      - Viewport keeps layout responsive on mobile
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Typography: Inter from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet: all layout + component styles live in styles.css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top label (fixed): quick context for which version you’re viewing -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards layout container (controls spacing and row/stack behavior) -->
     <div class="cards-container">
+        <!-- Card: Hobby (free tier) -->
         <div class="card">
+            <!-- Card top: plan name, price, and feature list -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                <!-- Card content: “Includes” label + bullet list -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +51,20 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary action for this plan -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro (paid tier) -->
         <div class="card">
+            <!-- Card top: plan name, price, and feature list -->
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                <!-- Card content: “Includes” label + bullet list -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,7 +87,44 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary action for this plan (primary variant styling in CSS) -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Card: Enterprise (team/company tier) -->
+        <div class="card">
+            <!-- Card top: plan name, price, and feature list -->
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <!-- Card content: “Includes” label + bullet list -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO + advanced security
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team admin controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom usage limits
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary action for this plan -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>

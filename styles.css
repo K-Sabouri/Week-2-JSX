@@ -162,8 +162,22 @@ body {
 
 .download-button.primary:active {
     background-color: #333;
+}   
+
+/* Secondary button variant (used for the “Start for Free” CTA) */
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #c7c6c1;
 }
 
+.download-button.tertiary:hover {
+    background-color: #e2e0d7;
+}
+
+.download-button.tertiary:active {
+    background-color: #e2e0d7;    ;
+}
 /* ==========================================================================
    Fixed page label (debug/variant indicator)
    - Stays pinned to the top so it’s always visible
